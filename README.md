@@ -1,2 +1,2 @@
 # tvm-solidity-docs-test
-Test
+Test structure for the TVM-Solidity compatibility documentation for Solidity developers.
