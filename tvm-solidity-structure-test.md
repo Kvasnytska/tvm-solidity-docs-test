@@ -68,7 +68,7 @@ In this example:
 
 #### Headers
 
-The following headers can be specified in the #[ExternalMessage] attribute:
+The following headers can be specified in the `ExternalMessage` attribute:
 | Header   | Type      | Description                                                                    |
 | -------- | --------- | ------------------------------------------------------------------------------ |
 | `time`   | `uint64`  | Local time when the message was created. Used for replay protection.           |
