@@ -6,7 +6,25 @@
 - Attributes
 - Keywords
 ## 1.2 Message handling
-### 1.2.1 External Messages
+### 1.2.1 External messages
+- ExternalMessage attribute
+- Example
+- Headers
+- Replay protection
+- Warnings
+## 1.3 Security mechanisms
+- Replay protection
+- Message expiration
+# 2. Limitations
+## 2.1 Unsupported Solidity features
+## 2.2 Errors
+# 3. Migration
+## 3.1 Key changes
+## 3.2 Migration steps
+## 3.3 Migration pitfalls
+# 4. Warnings
+
+### 1.2.1 External messages
 
 By default, TVM contracts do not receive external messages. To enable external message handling, the following elements are required:
 
@@ -19,7 +37,7 @@ By default, TVM contracts do not receive external messages. To enable external m
 
 ---
 
-#### `ExternalMessage` Attribute
+#### `ExternalMessage` attribute
 
 The `ExternalMessage` attribute defines which headers are expected in incoming external messages. These headers are required for message validation, replay protection, and expiration handling.
 
@@ -69,14 +87,3 @@ Replay protection attributes define how the contract prevents replay attacks for
 
 - Missing or incorrectly configured headers may cause external messages to be rejected.
 - Using external messages without replay protection may lead to replay attacks.
-## 1.3 Security mechanisms
-- Replay protection
-- Message expiration
-# 2. Limitations
-## 2.1 Unsupported Solidity features
-## 2.2 Errors
-# 3. Migration
-## 3.1 Key changes
-## 3.2 Migration steps
-## 3.3 Migration pitfalls
-# 4. Warnings
