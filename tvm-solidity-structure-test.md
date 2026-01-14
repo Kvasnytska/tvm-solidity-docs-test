@@ -33,7 +33,7 @@ By default, TVM contracts do not receive external messages. To enable external m
 - the `externalMsg` modifier on functions that handle external messages  
 
 > **Note**  
-> The `external` and `public` keywords define only [function visibility] (https://docs.soliditylang.org/en/latest/cheatsheet.html#function-visibility-specifiers) and do not enable external message handling.
+> The `external` and `public` keywords define only [function visibility](https://docs.soliditylang.org/en/latest/cheatsheet.html#function-visibility-specifiers) and do not enable external message handling.
 
 ---
 
