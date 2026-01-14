@@ -10,7 +10,7 @@
 
 By default, TVM contracts do not receive external messages. To enable external message handling, the following elements are required:
 
-- the `#[ExternalMessage]` contract-level attribute  
+- the `ExternalMessage` contract-level attribute  
 - a replay protection attribute  
 - the `externalMsg` modifier on functions that handle external messages  
 
@@ -19,9 +19,9 @@ By default, TVM contracts do not receive external messages. To enable external m
 
 ---
 
-#### `#[ExternalMessage]` Attribute
+#### `ExternalMessage` Attribute
 
-The `#[ExternalMessage]` attribute defines which headers are expected in incoming external messages. These headers are required for message validation, replay protection, and expiration handling.
+The `ExternalMessage` attribute defines which headers are expected in incoming external messages. These headers are required for message validation, replay protection, and expiration handling.
 
 The attribute is applied at the **contract level** and configures how the contract processes incoming external messages.
 
@@ -39,7 +39,7 @@ contract ExampleContract {
     }
 }
 
-
+```
 In this example:
 
 - the contract accepts external messages with time and expire headers
